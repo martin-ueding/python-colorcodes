@@ -3,6 +3,8 @@
 
 # Copyright © 2012 Martin Ueding <dev@martin-ueding.de>
 
+import subprocess
+
 __docformat__ = "restructuredtext en"
 
 class Colorcodes(object):
@@ -44,4 +46,3 @@ class Colorcodes(object):
             self.green = ""
             self.orange = ""
             self.red = ""
-
