@@ -11,7 +11,7 @@ setup(
     description = "Terminal color codes.",
     license = "MIT",
     name = "colorcodes",
-    py_modules = ["legacylib"],
+    py_modules = ["colorcodes"],
     url = "https://martin-ueding.de/projects/python-colorcodes",
     version = "1.0",
 )
