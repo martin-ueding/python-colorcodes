@@ -34,10 +34,13 @@ class Colorcodes(object):
             self.bold = subprocess.check_output("tput bold".split())
             self.reset = subprocess.check_output("tput sgr0".split())
 
-            self.blue = subprocess.check_output("tput setaf 4".split())
+            self.red = subprocess.check_output("tput setaf 1".split())
             self.green = subprocess.check_output("tput setaf 2".split())
             self.orange = subprocess.check_output("tput setaf 3".split())
-            self.red = subprocess.check_output("tput setaf 1".split())
+            self.blue = subprocess.check_output("tput setaf 4".split())
+            self.purple = subprocess.check_output("tput setaf 5".split())
+            self.cyan = subprocess.check_output("tput setaf 6".split())
+            self.white = subprocess.check_output("tput setaf 7".split())
         except subprocess.CalledProcessError as e:
             self.bold = ""
             self.reset = ""
@@ -46,3 +49,6 @@ class Colorcodes(object):
             self.green = ""
             self.orange = ""
             self.red = ""
+            self.cyan = ""
+            self.purple = ""
+            self.white = ""
